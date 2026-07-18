@@ -1,0 +1,52 @@
+{
+  "number_of_papers": 2619,
+  "input_columns": {
+    "relevance": "max_taxonomy_score",
+    "technical_depth": "Technical Depth Norm",
+    "citations": "Max Citations",
+    "query_coverage": "Number of Queries Matched"
+  },
+  "normalized_criteria": {
+    "relevance": "Relevance Norm",
+    "technical_depth": "Technical Depth Norm CRITIC",
+    "citations": "Citation Norm",
+    "query_coverage": "Query Coverage Norm"
+  },
+  "normalization": {
+    "relevance": "Min-max normalization",
+    "technical_depth": "Min-max normalization",
+    "citations": "log1p transformation followed by min-max normalization",
+    "query_coverage": "Min-max normalization"
+  },
+  "weights": {
+    "Taxonomy Relevance": 0.3401207754862404,
+    "Technical Depth": 0.2560812442174767,
+    "Citation Impact": 0.2704337482195538,
+    "Query Coverage": 0.13336423207672907
+  },
+  "weight_sum": 1.0,
+  "final_score": {
+    "minimum": 0.00957220167228938,
+    "maximum": 0.785762391511998,
+    "mean": 0.25739521655898034,
+    "median": 0.2329845302026634,
+    "standard_deviation": 0.11950327905627521
+  },
+  "score_class_counts": {
+    "Q1": 1480,
+    "Q2": 1012,
+    "Q3": 123,
+    "Q4": 4
+  },
+  "selected_class_counts": {
+    "Q1-Q2": 2492,
+    "Q3-Q4": 127
+  },
+  "selected_class_rule": "Q3-Q4 when Final Score is greater than or equal to 0.50; otherwise Q1-Q2.",
+  "outputs": {
+    "scored_papers": "all_2619_CRITIC_final_scores.csv",
+    "weights": "CRITIC_weights.csv",
+    "correlation_matrix": "CRITIC_correlation_matrix.csv",
+    "report": "CRITIC_report.json"
+  }
+}

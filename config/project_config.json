@@ -1,0 +1,28 @@
+{
+  "seed": 4000,
+  "cross_validation_folds": 5,
+  "technical_depth_target": "Average Grade",
+  "paper_id_column": "Paper ID",
+  "abstract_column": "Canonical Abstract",
+  "critic_inputs": {
+    "relevance": "max_taxonomy_score",
+    "technical_depth": "Technical Depth Norm",
+    "citation_impact": "Max Citations",
+    "query_coverage": "Number of Queries Matched"
+  },
+  "model_candidates": {
+    "MiniLM": "sentence-transformers/all-MiniLM-L6-v2",
+    "SciBERT": "allenai/scibert_scivocab_uncased",
+    "SPECTER2": "allenai/specter2_base",
+    "BGE": "BAAI/bge-small-en-v1.5",
+    "TF-IDF": "word unigrams and bigrams"
+  },
+  "model_selection": "lowest RMSE, then lowest MAE, then highest Spearman correlation",
+  "relevance": {
+    "method": "weighted reciprocal rank fusion",
+    "config": "relevance/config/rrf_config.json",
+    "input": "relevance/data/retrieval_ranks_2619.csv",
+    "output": "data/processed/relevance_features_2619.csv",
+    "critic_column": "max_taxonomy_score"
+  }
+}

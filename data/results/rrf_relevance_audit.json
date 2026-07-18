@@ -1,0 +1,28 @@
+{
+  "papers": 2619,
+  "rrf_constant_k": 60.0,
+  "query_family_weights": {
+    "explicit_base": 1.5,
+    "taxonomy": 1.2,
+    "implicit": 1.0
+  },
+  "number_of_configured_queries": 12,
+  "taxonomy_columns": [
+    "coordination_score",
+    "communication_score",
+    "planning_reasoning_score",
+    "memory_score",
+    "tool_use_score",
+    "evaluation_benchmarking_score"
+  ],
+  "critic_relevance_column": "max_taxonomy_score",
+  "weighted_rrf_range": [
+    0.0026785714285714286,
+    0.09740713353501214
+  ],
+  "max_taxonomy_score_range": [
+    0.0,
+    0.019672131147540982
+  ],
+  "output": "/mnt/data/agent-paper-ranking/data/processed/relevance_features_2619.csv"
+}

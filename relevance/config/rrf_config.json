@@ -1,0 +1,67 @@
+{
+  "rrf_constant_k": 60,
+  "query_family_weights": {
+    "explicit_base": 1.5,
+    "taxonomy": 1.2,
+    "implicit": 1.0
+  },
+  "queries": {
+    "Explicit_BaseQuery": {
+      "family": "explicit_base",
+      "dimension": "base"
+    },
+    "Explicit_BaseQuery_Taxonomy_Coordination": {
+      "family": "taxonomy",
+      "dimension": "coordination"
+    },
+    "Explicit_BaseQuery_Taxonomy_Communication": {
+      "family": "taxonomy",
+      "dimension": "communication"
+    },
+    "Explicit_BaseQuery_Taxonomy_Planning_Reasoning": {
+      "family": "taxonomy",
+      "dimension": "planning_reasoning"
+    },
+    "Explicit_BaseQuery_Taxonomy_Memory": {
+      "family": "taxonomy",
+      "dimension": "memory"
+    },
+    "Explicit_BaseQuery_Taxonomy_Tool_Use": {
+      "family": "taxonomy",
+      "dimension": "tool_use"
+    },
+    "Explicit_BaseQuery_Taxonomy_Eval_Benchmarking": {
+      "family": "taxonomy",
+      "dimension": "evaluation_benchmarking"
+    },
+    "ImplicitQuery1_Tool_Use": {
+      "family": "implicit",
+      "dimension": "implicit_tool_use"
+    },
+    "ImplicitQuery2_Reasoning_Acting": {
+      "family": "implicit",
+      "dimension": "implicit_reasoning_acting"
+    },
+    "ImplicitQuery3_LLM_Agents": {
+      "family": "implicit",
+      "dimension": "implicit_llm_agents"
+    },
+    "ImplicitQuery4_RAG": {
+      "family": "implicit",
+      "dimension": "implicit_rag"
+    },
+    "ImplicitQuery5_Code_Reasoning": {
+      "family": "implicit",
+      "dimension": "implicit_code_reasoning"
+    }
+  },
+  "taxonomy_output_columns": {
+    "coordination": "coordination_score",
+    "communication": "communication_score",
+    "planning_reasoning": "planning_reasoning_score",
+    "memory": "memory_score",
+    "tool_use": "tool_use_score",
+    "evaluation_benchmarking": "evaluation_benchmarking_score"
+  },
+  "relevance_for_critic": "max_taxonomy_score"
+}
