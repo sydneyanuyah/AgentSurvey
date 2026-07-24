@@ -1,0 +1,37 @@
+Final Search Query Set
+
+Explicit_BaseQuery
+("LLM" OR "large language model" OR "language model") AND ("agent" OR "agents" OR "agentic" OR "autonomous system")
+
+Explicit_BaseQuery_Taxonomy_Coordination
+("LLM" OR "large language model" OR "language model") AND ("agent" OR "agents" OR "agent system" OR "multi-agent") AND ("coordination" OR "collaboration" OR "distributed" OR "cooperation")
+
+Explicit_BaseQuery_Taxonomy_Communication
+("LLM" OR "large language model" OR "language model") AND ("agent" OR "agents" OR "multi-agent") AND ("communication" OR "interaction" OR "protocol" OR "message passing")
+
+Explicit_BaseQuery_Taxonomy_Planning_and_Reasoning
+("LLM" OR "large language model" OR "language model") AND ("agent" OR "agents" OR "reasoning" OR "planning") AND ("task planning" OR "decision making" OR "ReAct" OR "chain-of-thought" OR "iterative reasoning")
+
+Explicit_BaseQuery_Taxonomy_Memory
+("LLM" OR "large language model" OR "language model") AND ("agent" OR "agents" OR "memory") AND ("long-term memory" OR "episodic memory" OR "retrieval" OR "RAG" OR "retrieval-augmented generation")
+
+Explicit_BaseQuery_Taxonomy_Tool_Use
+("LLM" OR "large language model" OR "language model") AND ("agent" OR "agents" OR "tool use") AND ("API" OR "tool" OR "external tools" OR "function calling" OR "code execution")
+
+Explicit_BaseQuery_Taxonomy_Evaluation_and_Benchmarking
+("LLM" OR "large language model" OR "language model") AND ("agent" OR "agents") AND ("benchmark" OR "evaluation" OR "performance" OR "assessment")
+
+ImplicitQuery1_Tool_Use
+("LLM" OR "large language model" OR "language model") AND ("tool use" OR "toolformer" OR "API calling" OR "function calling" OR "external tools")
+
+ImplicitQuery2_Reasoning_and_Acting
+("LLM" OR "large language model" OR "language model") AND ("ReAct" OR "reasoning and acting" OR "chain-of-thought" OR "iterative reasoning" OR "task planning")
+
+ImplicitQuery3_Autonomous_Behavior
+("LLM" OR "large language model" OR "language model") AND ("autonomous agents" OR "LLM agents" OR "autonomous systems" OR "self-directed systems")
+
+ImplicitQuery4_Memory_Systems
+("LLM" OR "large language model" OR "language model") AND ("long-term memory" OR "episodic memory" OR "retrieval" OR "RAG" OR "retrieval-augmented generation")
+
+ImplicitQuery5_Program_Execution_Code_Reasoning
+("LLM" OR "large language model" OR "language model") AND ("program-aided language models" OR "PAL" OR "code execution" OR "program synthesis" OR "tool-augmented reasoning")
