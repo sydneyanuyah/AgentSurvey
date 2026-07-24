@@ -1,0 +1,12 @@
+file_number,input_file,saved_file,total_rows,found_count,skipped_count
+1,10. ImplicitQuery3 - LLM Agents.csv,10. ImplicitQuery3 - LLM Agents_with_original_abstracts.csv,300,236,64
+2,11. ImplicitQuery4 -RAG.csv,11. ImplicitQuery4 -RAG_with_original_abstracts.csv,300,248,52
+3,12. ImplicitQuery5 ΓÇö Program Execution or Code Reasoning.csv,12. ImplicitQuery5 ΓÇö Program Execution or Code Reasoning_with_original_abstracts.csv,300,250,50
+4,2. Explicit BaseQuery2-coordination.csv,2. Explicit BaseQuery2-coordination_with_original_abstracts.csv,300,128,172
+5,3. Explicit_BaseQuery_Taxonomy ΓÇö Communication.csv,3. Explicit_BaseQuery_Taxonomy ΓÇö Communication_with_original_abstracts.csv,300,81,219
+6,4. Explicit_BaseQuery_Taxonomy ΓÇö Planning and Reasoning.csv,4. Explicit_BaseQuery_Taxonomy ΓÇö Planning and Reasoning_with_original_abstracts.csv,300,70,230
+7,5. Explicit_BaseQuery_Taxonomy ΓÇö Memory.csv,5. Explicit_BaseQuery_Taxonomy ΓÇö Memory_with_original_abstracts.csv,300,110,190
+8,6. Explicit_BaseQuery_Taxonomy_ToolUse.csv,6. Explicit_BaseQuery_Taxonomy_ToolUse_with_original_abstracts.csv,300,88,212
+9,7. Explicit_BaseQuery_Taxonomy ΓÇö Evaluation and Benchmarking.csv,7. Explicit_BaseQuery_Taxonomy ΓÇö Evaluation and Benchmarking_with_original_abstracts.csv,300,77,223
+10,8. ImplicitQuery1 ΓÇö Tool Use.csv,8. ImplicitQuery1 ΓÇö Tool Use_with_original_abstracts.csv,300,42,258
+11,9. ImplicitQuery2 ΓÇö Reasoning and Acting.csv,9. ImplicitQuery2 ΓÇö Reasoning and Acting_with_original_abstracts.csv,300,71,229
